@@ -8,8 +8,48 @@ body {
     background-color: black;
 }
 
-h1 {
+h1, p {
     color: #fff;
     text-align: center;
 }
 
+.padre {
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+    border: 5px double #fff;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 20px;
+    display: flex; /* display: flex; Es la propiedad por defecto que hace que las cajas sean flexibles. */
+    flex-direction: row; /* flex-direction: Es la propiedad que permite indicar cual sera la direccion en las que se van a mostrar las cajas. */
+    flex-wrap: wrap; /* flex-wrap: wrap; Es para cuando tenemos muchos elementos que desbordan el contenedor y necesitamos que sea multilinea */
+    /* align-items: center;  align-items: Es para alinear los elementos el contenedor. (Esta propiedad solo funciona con "flex-wrap: wrap;") */ 
+    justify-content:space-evenly ; 
+    /* 
+    Permit un movimiento de las cajas dentro del contenedor
+        flex-start; Es el valor por defecto y deja los elementos a la izquierda del contenedor.
+        center; Va a centrar los elementos al centro del contenedor.
+        space-between; Centra los elementos dentro del contenedor pero con un espacio interno entre los elementos.
+        space-around; Aplica el mismo espacio entre todos los elementos dentro del contenedor.
+        space-evenly; Deja un espacio entre los elementos con respecto al borde del contenedor.
+    (Esta propiedad solo funcioa con "flex-direction: row;")
+    */
+}
+
+.hijo {
+    width: 20%;
+    height: 20vh;
+    background-color: #1c1c1c;
+    border: 5px solid  #fff;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
