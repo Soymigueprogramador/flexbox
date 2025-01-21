@@ -15,17 +15,17 @@ h1, p {
 
 .padre {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #1c1c1c;
     border: 5px double #fff;
     border-radius: 20px;
     padding: 50px;
     margin-top: 20px;
     display: flex; /* display: flex; Es la propiedad por defecto que hace que las cajas sean flexibles. */
-    flex-direction: row; /* flex-direction: Es la propiedad que permite indicar cual sera la direccion en las que se van a mostrar las cajas. */
+    flex-direction: column; /* flex-direction: Es la propiedad que permite indicar cual sera la direccion en las que se van a mostrar las cajas. */
     flex-wrap: wrap; /* flex-wrap: wrap; Es para cuando tenemos muchos elementos que desbordan el contenedor y necesitamos que sea multilinea */
     /* align-items: center;  align-items: Es para alinear los elementos el contenedor. (Esta propiedad solo funciona con "flex-wrap: wrap;") */ 
-    justify-content:space-evenly ; 
+    justify-content: center; 
     /* 
     Permit un movimiento de las cajas dentro del contenedor
         flex-start; Es el valor por defecto y deja los elementos a la izquierda del contenedor.
@@ -34,6 +34,26 @@ h1, p {
         space-around; Aplica el mismo espacio entre todos los elementos dentro del contenedor.
         space-evenly; Deja un espacio entre los elementos con respecto al borde del contenedor.
     (Esta propiedad solo funcioa con "flex-direction: row;")
+    */
+    /*
+    align-items: center;
+        Permite mover los elementos dentro del contenedor de forma horizontal.
+        1- center; Permite centrar los elementos dentro del contenedor dejando espacios a todos los lados de los elementos.
+        2- flex-start; Pondra los elementos en la parte superior del contenedor.
+        3- flex-end; Pondra los elementos en la parte inferior del contenedor. 
+        4- stretch; Alarga los elementos desde la parte superior hasta la parte inferior del contenedor.
+    (Esta propiedad va de la mano con "justify-content:")
+    */
+    align-content: space-evenly;
+    /*
+        align-content: Esta propiedad permite acomodar el contenido de un contenedor padre.
+        1- flex-start; Acomoda los elementos en la parte superior del contenedor.
+        2- center; Acomoda los elementos al centro del contenedor.
+        3- flex-end; Acomoda los elementos en la parte inferior del contenedor.
+        4- space-between; Separa los elementos en dos lineas y los acomoda arriba y abajo dejando un espacio en el medio del contenedor.
+        5- space-around; Separa los elementos en dos lineas y los acomoda arriba y abajo dejando espacios entre los elementos y los bordes del contenedor.
+        6- space-evenly; Deja los mismos espacios al rededor de los elementos.
+    (Esta propiedad funcionara unicamente con "")
     */
 }
 
